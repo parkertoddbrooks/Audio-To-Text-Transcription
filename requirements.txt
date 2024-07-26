@@ -1,8 +1,9 @@
-anthropic==0.3.6 
+anthropic
 anyio
 google-cloud-speech==2.21.0
 protobuf==3.20.3
 pydub==0.25.1
 python-dotenv==1.0.0
 rich==13.4.2  
+setuptools>=68.0.0
 SpeechRecognition==3.10.0
