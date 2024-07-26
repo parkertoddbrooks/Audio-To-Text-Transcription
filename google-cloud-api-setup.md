@@ -31,18 +31,14 @@ Follow these steps to set up and use the paid version of the Audio-To-Text Trans
    - Choose "JSON" as the key type and click "Create".
    - The JSON key file will be downloaded to your computer. Keep this file secure, as it contains sensitive information.
 
-5. Set up environment variable:
-   - Move the downloaded JSON key file to a secure location on your computer.
-   - Set the GOOGLE_APPLICATION_CREDENTIALS environment variable to point to this file:
-     - On macOS/Linux, add this line to your ~/.bash_profile or ~/.zshrc:
-       ```
-       export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/keyfile.json"
-       ```
-     - On Windows, you can set it via the System Properties > Environment Variables, or use this command in PowerShell:
-       ```
-       $env:GOOGLE_APPLICATION_CREDENTIALS="C:\path\to\your\keyfile.json"
-       ```
-   - Remember to replace "/path/to/your/keyfile.json" with the actual path to your JSON key file.
+5. Set up Google Cloud SDK:
+   - Install the Google Cloud SDK if you haven't already: https://cloud.google.com/sdk/docs/install
+   - Open a terminal and run:
+     ```
+     gcloud auth application-default login
+     ```
+   - This command will open a browser window where you can log in to your Google account and authorize the SDK to access your Google Cloud resources.
+   - After successful authentication, the credentials will be saved on your local machine, and your PATH will be updated.
 
 6. Install the Google Cloud client library:
    - If you haven't already, install the Google Cloud client library for Python:
@@ -61,3 +57,8 @@ Follow these steps to set up and use the paid version of the Audio-To-Text Trans
 Remember to monitor your usage in the Google Cloud Console, as there may be costs associated with using the Speech-to-Text API beyond the free tier.
 
 If you encounter any issues during setup or usage, please refer to the Google Cloud documentation or open an issue in this repository for assistance.
+
+
+
+
+                                                                                                                                                 │
