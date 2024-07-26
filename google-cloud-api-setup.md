@@ -29,13 +29,20 @@ Follow these steps to set up and use the paid version of the Audio-To-Text Trans
    - Verify that the credentials were saved by checking for a message like:
      "Credentials saved to file: [PATH_TO_CREDENTIALS_FILE]"
 
-5. Install the Google Cloud client library:
+5. Set the quota project:
+   - In the terminal, run the following command, replacing YOUR_PROJECT_ID with your actual project ID:
+     ```
+     gcloud auth application-default set-quota-project YOUR_PROJECT_ID
+     ```
+   - This step is crucial for setting up the quota project for the Speech-to-Text API when using Application Default Credentials.
+
+6. Install the Google Cloud client library:
    - Install the Google Cloud client library for Python:
      ```
      pip install google-cloud-speech
      ```
 
-6. Test the paid version:
+7. Test the paid version:
    - Run your `main.py` script:
      ```
      python main.py
@@ -47,7 +54,4 @@ Remember to monitor your usage in the Google Cloud Console, as there may be cost
 
 If you encounter any issues during setup or usage, please refer to the Google Cloud documentation or open an issue in this repository for assistance.
 
-
-
-
-                                                                                                                                                 │
+                                                                                                                                    
