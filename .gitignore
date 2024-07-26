@@ -45,3 +45,4 @@ _dev_files/automator-app/cleaned-and-signed/DuplicateWithTimestamp.app/**
 __pycache__/
 *.pyc
 _git-ignore/
+.env
