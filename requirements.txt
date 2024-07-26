@@ -1,7 +1,8 @@
-SpeechRecognition==3.10.0
-pydub==0.25.1
+anthropic==0.3.6 
+anyio
 google-cloud-speech==2.21.0
-rich                                                                                                                                                                                                        
-python-dotenv==1.0.0
-anthropic  
 protobuf==3.20.3
+pydub==0.25.1
+python-dotenv==1.0.0
+rich==13.4.2  
+SpeechRecognition==3.10.0
