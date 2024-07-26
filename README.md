@@ -27,20 +27,28 @@ This tool allows you to transcribe audio files to text using either the free Goo
 
 1. Clone this repository or download the project files.
 
-2. Install the required Python libraries:
+2. Create and activate and venv
+
+3. Install the required Python libraries:
 
    ```
    pip install -r requirements.txt
    ```
+   
+   or
+   
+   ```
+   pip install --no-cache-dir --upgrade -r requirements.txt
+   ```
 
-3. Install FFmpeg:
+4. Install FFmpeg:
    - On macOS (using Homebrew): `brew install ffmpeg`
    - On Ubuntu or Debian: `sudo apt-get install ffmpeg`
    - On Windows, download the FFmpeg binaries from the official website and add them to your system PATH.
 
-4. For the paid version, follow the setup instructions in the [google-cloud-api-setup.md](google-cloud-api-setup.md) file.
+5. For the paid version, follow the setup instructions in the [google-cloud-api-setup.md](google-cloud-api-setup.md) file.
 
-5. For Claude post-processing, create a .env file in the project root and add your Anthropic API key:
+6. For Claude post-processing, create a .env file (see: .env-example) in the project root and add your Anthropic API key:
    ```
    CLAUDE_API_KEY=your_api_key_here
    ```
