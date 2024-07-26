@@ -40,3 +40,7 @@ Temporary Items
 *.tmp
 *.swp_dev_files/automator-app/cleaned-and-signed/DuplicateWithTimestamp.app/**
 _dev_files/automator-app/cleaned-and-signed/DuplicateWithTimestamp.app/**
+
+# Python cache files
+__pycache__/
+*.pyc
