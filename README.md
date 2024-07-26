@@ -118,3 +118,7 @@ If you encounter any other issues or have questions, please open an issue in thi
 - Implement a progress bar for long-running processes
 
 We welcome contributions and suggestions to improve this tool.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
