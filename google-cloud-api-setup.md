@@ -18,35 +18,24 @@ Follow these steps to set up and use the paid version of the Audio-To-Text Trans
    - Click on "Speech-to-Text API" in the results.
    - Click the "Enable" button.
 
-4. Create a service account and generate a key:
-   - In the Google Cloud Console, go to "IAM & Admin" > "Service Accounts" from the navigation menu.
-   - Click "Create Service Account" at the top of the page.
-   - Enter a name for the service account (e.g., "audio-transcription-sa").
-   - Click "Create and Continue".
-   - For the role, you can select "Project" > "Owner" for full access, or "Cloud Speech Admin" for more restricted access.
-   - Click "Continue" and then "Done".
-   - Find your newly created service account in the list and click on it.
-   - Go to the "Keys" tab.
-   - Click "Add Key" > "Create new key".
-   - Choose "JSON" as the key type and click "Create".
-   - The JSON key file will be downloaded to your computer. Keep this file secure, as it contains sensitive information.
-
-5. Set up Google Cloud SDK:
-   - Install the Google Cloud SDK if you haven't already: https://cloud.google.com/sdk/docs/install
+4. Set up Google Cloud SDK:
+   - Install the Google Cloud SDK: https://cloud.google.com/sdk/docs/install
    - Open a terminal and run:
      ```
      gcloud auth application-default login
      ```
-   - This command will open a browser window where you can log in to your Google account and authorize the SDK to access your Google Cloud resources.
-   - After successful authentication, the credentials will be saved on your local machine, and your PATH will be updated.
+   - This command will open a browser window where you can log in to your Google account and authorize the SDK.
+   - After successful authentication, the credentials will be saved on your local machine.
+   - Verify that the credentials were saved by checking for a message like:
+     "Credentials saved to file: [PATH_TO_CREDENTIALS_FILE]"
 
-6. Install the Google Cloud client library:
-   - If you haven't already, install the Google Cloud client library for Python:
+5. Install the Google Cloud client library:
+   - Install the Google Cloud client library for Python:
      ```
      pip install google-cloud-speech
      ```
 
-7. Test the paid version:
+6. Test the paid version:
    - Run your `main.py` script:
      ```
      python main.py
