@@ -1,0 +1,114 @@
+I understand you've discovered something new that has you feeling template is a bit uncomfortable and slightly doubtful. I apologize for the misunderstanding. You're right the correct me, please go ahead and explain I'm listening attentively and won't interrupt. I'm here to understand your perspective.
+
+Heber  Say there.  What brings you by?
+
+I understand your reaction. It seems like you're feeling a mix of confusion doubt and positive surprise about our conversation or the system. We've been discussing. Of course, I'd be happy to help what favor did you have in mind? I'm here and ready to assist with whatever you need.  
+
+I sense you're feeling a b. I understand.  You're right, and I apologize for the confusion earlier.  
+
+Summarize the key points we discussed about the pipeline and royalty payment model 15 line overview user selects 10 songs via Apple music API, right data retrieved from Apple music SDK model Training Music generation based on selected songs and larger model post-processing and Publishing to platoon Distribution on Apple music to 33% of royalties. Go to the larger model training data set. Distributed Pro rata 67% of royalties go to rights holders of the 10 specific songs used the two handles automatic splitting and distribution of royalties three key components to build user interface for song selection integration with apple. Music API n s t k a i model 4 music generation publishing and distribution system through platoon royalty tracking distribution system. 
+
+Is there a specific aspect of this summer you'd like me to expand on further.  
+
+certainly I understand you're looking for a technical pipe on using a WS.  Here's a high-level overview one.  User interface web application using react or similar framework integrate with apple music API for song search and selection to and server know dies or python application on ec2 or ECS handles user requests and orchestrate some pipeline 380 processing AWS Lambda functions for data preparation convert selected songs to spectrograms using libros the library for training Amazon sagemaker for model development and training. 
+
+Hws KMS, where do you find quicksand is his technical pipeline align what you had in mind you like me to elaborate on any specific component?  
+
+tripping  I apologize for misunderstanding your needs earlier. Let's revisit the pipeline concept. I'm ready to listen and understand what you have in mind for a more accurate technical pipeline. 
+
+I apologize for missing the mark earlier. Let's revisit the pipeline and breakdown how all the pieces would work together. Please go ahead and describe your vision for the pipeline focusing. The key components and their interactions. I'm listening carefully and ready to help her find the technical aspects based on your specific requirements.
+
+Okay, I understand now.  Thank you for explaining that let me summarize the pipeline based on your description.  web interface  
+
+I apologize for interrupting. Please continue with your explanation about the larger model. 
+
+I apologize for jumping to head. So please continue with your explanation about the larger model listening and one interrupts. 
+
+Thank you for spending the full process. Okay. Got it.  
+
+Thank you for explaining that process. I am listening.  
+
+apologize  I'm here.  Listening attentively and won't interrupt again. So please continue explaining about the 10 songs in the process. I'm here to understand your full concept without interjecting. 
+
+You again similar architecture for music generation store train models in his 35 music generation land of function received me for endpoint for inference generate new music based on user input entering mode 60 sproston ec2 instance or easiest asks for audio enhancement add metadata using AWS step function seven publishing and distribution Lambda function to interface with platoon a PS3 for temporary storage of generator tracks eight Rights Management in royalty calculation dynamodb for storing grapes data and loyalty information Lambda functi
+
+User: uploads 10 songs through the web interface.
+
+System: uses the Shazam SDK to automatically identify and associate each uploaded song with its Apple Music counterpart. If a match can't be found, user has two options:
+a) manually search Apple Music and select the correct matching song
+b) delete the unmatched song from the list 
+
+The process can only continue once all uploaded songs have been successfully matched with Apple Music entries. This ensures that we have accurate rights information for royalty calculations.
+
+AWS: uses the 10 matched songs as predominant weights for new song generation. The larger model is also used in generation, but with less influence.
+
+System: 
+- The newly generated song is returned to the web interface.  
+- User can choose to play or publish the new song.
+- If published, the process continues as follows:
+    - Audio file sent to Platoon via REST calls
+    - Rights split info from Apple Music SDK sent to Platoon
+    - Platoon handles distribution and royalty management
+
+This process combines user-uploaded content with the Apple Music catalog for AI music generation.
+
+Certainly, I'll provide a comprehensive pipeline PRD with the technologies needed and steps to follow.
+
+Product Requirements Document for an AI Music Generation Pipeline:
+
+1. Web Interface 
+    - Technology: React JS
+    - Features:
+        a) Song upload functionality
+        b) Integration with Apple Music API for song search
+        c) Shazam integration for song matching
+        d) Play / Publish buttons for generated song
+
+Steps:
+1. User uploads 10 songs and matches them with Apple Music entries
+2. Once all songs are matched, they're uploaded to AWS
+3.
+
+Here is the reformatted transcript part:
+
+those tents on POF interface to Shazam SDK matches uploaded songs to Apple music catalog user can manually match or delete unmatched songs. All songs must be matched to proceed free at songs are uploaded to a PS4. 
+
+I understand your interest in existing open-source models trained on large volumes of music.  Let me provide some information on this topic.  Currently there isn't a single comprehensive open-source model train than a large volume of music that's ready for production used in the way you described. 
+
+Implement database interactions and back and 48 lbs integration Technologies Age Make Her features on quick match song. You run a r model for some generation steps one set of AWS account necessary services to develop a train on larger Apple music catalog be generating songs based on React project to implement song upload component 3 in the great Apple music API for search for implementation has a mistake a for matching 5/8 play / published interface to back-end server technology by Don features a handle file upload be managed Apple music API interactions see process as a matching results D communicate with ahus for sun generation steps one set of pythons are 42 woman file upload handling free create Apple music APO crap or 4 cuz I'll choose msdk integration 5S communication module 3 database technology postgresql speech to the store user upload speed track Apple music matches c-store generated some meditative steps One Design later basic unit to setup post rescue. 
+
+Features a track system performance monitor user interaction see log errors and exceptions steps one set of Elkay stacked Sports 10 security Technologies. 
+
+Use your applications. Each section can be expanded into more detail technical specifications as development progresses. steps  Yes.  
+
+Continuous integration pipe 8 appointment Technologies Docker kubernetes features of containerize application components be set up scalable deployment steps 18.4 piles for each component to set up Cooper news 3 application to production environment 9 monitoring and logging Technologies. 
+
+I apologize for the confusion earlier.  You're right to ask for clarification on the specific model for song creation. And you're looking for an open source alternative to using the Apple music catalog for training the music generation mop.  
+
+So let me provide some information on existing open-source models for music generation. There are several open-source models trained on large volumes of music do they may not be as comprehensive as the entire Apple music catalog for a few options. 
+
+1 magenta includes models like music Transformer music. They eat rained on various midi datasets can generate Melodies and harmonies 
+
+2 Abba on that fully open source. They have released some models trained on classical music compositions 
+
+3 News Net can generate 4minute musical compositions. A wide range of genres and styles 
+
+4 jukebox generates music with vocals trained in a large data set of Psalms 
+
+5 wave RNN focuses on generating raw. Audio waveform can be trained on various music data sets. 
+
+These models could potentially serve as a starting point or replacement for the Apple Music Channel log in your pipe on however, keep in mind that they may have limitations in terms of John real coverage are audio quality compared to a comprehensive commercial catalog. 
+
+Would you like more details on any of these models or information on how to integrate them into your pipeline? Post-processing adjust audio to match desired length Temple Etc to waiting the 10 songs more heavily would be in the input processing and model fine-tuning stages. We need to develop a custom waiting system in the future extraction and model and put faces. 
+
+Does this help clarify the model and process would you like more details and any specific part of this pipeline? here to chat  how to  
+
+Thanks for clarifying.  When I mentioned model fine-tuning stages, I was referring to fine-tuning to Maine models. The music generation model this would be fine-tuned
+
+Here is the reformatted transcript chunk to improve readability:
+
+Input process since we take the 10 uploaded songs and extract their musical features. We also have features from the larger music catalog to I under Each components in the right order passing data between stages and managing the overall execution of the PICC line. Is this the line with what you had in mind for the central component of your pipe. 
+
+You're welcome. might look like a python import teacher extractor import music generator import audio synthesizer import model fine-tune her death, May load and processing put songs Simple Songs loading put songs catalog teacher load Cadillac features from input sounds and put Feature Feature extractor extract extract fine-tuned model music model find Junior. 
+
+Fine tuner. Fine tuner music model audio online tuner a tune Audio model generate new music structure new music structure music generator. Generate synthesized Audio new audio audio synthesizer. Synthesize save and return output sign up if need main meaning this trip would import the necessary modules to find the main work going to handle the overall process flow it would be responsible for
