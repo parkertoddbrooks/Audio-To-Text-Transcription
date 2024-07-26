@@ -33,7 +33,7 @@ This tool allows you to transcribe audio files to text using either the free Goo
 
 ## Requirements
 
-- Python 3.6 or higher
+- Python 3.12
 - FFmpeg (for audio format conversion)
 - Google Cloud account and credentials (for paid version)
 - Anthropic API key (for Claude post-processing)
@@ -103,6 +103,11 @@ The script will:
 
 If you encounter any other issues or have questions, please open an issue in this repository.
 
+## Version History
+
+- v1.0.0 
+  - Initial release
+  
 ## Future Improvements
 
 - Implement batch processing for multiple audio files
