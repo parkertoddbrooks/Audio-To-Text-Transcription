@@ -15,6 +15,21 @@ This tool allows you to transcribe audio files to text using either the free Goo
 - Intelligent file naming to avoid overwriting existing files
 - Real-time progress reporting for long audio files
 - Post-processing option using Claude Opus 3 for improved readability and error correction
+- Support for custom vocabularies in the paid version to enhance transcription accuracy
+- Post-processing option using Claude Opus 3 for improved readability and error correction
+
+## Notes
+
+- The free version is limited to short audio clips (typically 10-15 seconds) due to API constraints.
+- The paid version supports longer audio files with improved accuracy, using the latest Google Cloud Speech-to-Text API (v1p1beta1).
+- Long audio files are automatically split into chunks and processed in parallel for faster transcription.
+- Temporary files created during processing are automatically cleaned up.
+- When saving transcriptions, the tool checks for existing files and increments the filename (e.g., filename-01, filename-02) to avoid overwriting.
+- Claude post-processing is performed in chunks for long transcriptions to stay within API limits.
+
+## Examples
+
+[dev-tests-examples](dev-tests-examples) contains short and long sample audio files, and short and long transcription output examples with and withou Claude Opus 3 processing. The AI voice is from: https://www.hume.ai.
 
 ## Requirements
 
@@ -40,7 +55,7 @@ This tool allows you to transcribe audio files to text using either the free Goo
    ```
    pip install --no-cache-dir --upgrade -r requirements.txt
    ```
-
+   
 4. Install FFmpeg:
    - On macOS (using Homebrew): `brew install ffmpeg`
    - On Ubuntu or Debian: `sudo apt-get install ffmpeg`
@@ -76,15 +91,6 @@ The script will:
 6. Optionally save the transcription to a file in the specified directory.
 7. If chosen, post-process the transcription using Claude Opus 3 for improved formatting and error correction.
 
-## Notes
-
-- The free version is limited to short audio clips (typically 10-15 seconds) due to API constraints.
-- The paid version supports longer audio files with improved accuracy, using the latest Google Cloud Speech-to-Text API (v1p1beta1).
-- Long audio files are automatically split into chunks and processed in parallel for faster transcription.
-- Temporary files created during processing are automatically cleaned up.
-- When saving transcriptions, the tool checks for existing files and increments the filename (e.g., filename-01, filename-02) to avoid overwriting.
-- Claude post-processing is performed in chunks for long transcriptions to stay within API limits.
-
 ## Troubleshooting
 
 - Ensure FFmpeg is correctly installed and accessible in your system PATH.
@@ -104,6 +110,9 @@ If you encounter any other issues or have questions, please open an issue in thi
 - Add support for more languages and dialects
 - Implement a caching system to avoid reprocessing of previously transcribed audio
 - Explore options for improving transcription accuracy through custom language models
+- Develop a comprehensive logging system for better debugging and performance analysis
+- Enhance the Claude post-processing feature with more advanced formatting options
+- Implement a progress bar for long-running processes
 - Develop a comprehensive logging system for better debugging and performance analysis
 - Enhance the Claude post-processing feature with more advanced formatting options
 - Implement a progress bar for long-running processes
