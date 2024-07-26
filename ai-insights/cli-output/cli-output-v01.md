@@ -2399,3 +2399,7 @@ Traceback (most recent call last):
 rich.errors.MarkupError: closing tag '[/Users/YOUR_USERNAME/.config/gcloud/application_default_credentials.json]' at position 832 doesn't match any open tag
 (claude-engineer-venv) parker@PxB-MBP-16 claude-engineer % 
 
+
+
+
+ok so when I intalled the the sdk, than ran: gcloud auth application-default login - authorized via logging into google cloud, I was redirected to thhe web - an oauth - then it said: Credentials saved to file: [/Users/parker/.config/gcloud/application_default_credentials.json] and then: These credentials will be used by any library that requests Application Default Credentials (ADC). -- there is now need to manually update the path. 
