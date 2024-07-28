@@ -29,11 +29,11 @@ This tool allows you to transcribe audio files to text using either the free Goo
 
 ## Examples
 
-[dev-tests-examples](dev-tests-examples) contains short and long sample audio files, and short and long transcription output examples with and withou Claude Opus 3 processing. The AI voice is from: https://www.hume.ai.
+[~/dev-tests-examples/](dev-tests-examples) contains short and long sample audio files, and short and long transcription output examples with and withou Claude Opus 3 processing. The AI voice is from: https://www.hume.ai.
 
 ## AI-Assisted Development Insights
 
-The project was developed with Claude.ai and Claude Engineer CLI. The `/ai_insight/` directory contains valuable information about this AI-assisted development approach:
+The project was developed with Claude.ai and Claude Engineer CLI. The [~/ai-insights/](https://github.com/parkertoddbrooks/Audio-To-Text-Transcription/tree/readme-udpate/ai-insights) directory contains valuable information about this AI-assisted development approach:
 
 ### cli-dump
 Complete transcripts of Claude Engineering CLI sessions.
