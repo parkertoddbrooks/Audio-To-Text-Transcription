@@ -33,7 +33,7 @@ This tool allows you to transcribe audio files to text using either the free Goo
 
 ## AI-Assisted Development Insights
 
-The project was developed with Claude.ai and Claude Engineer CLI. The `/ai_insight/` directory contains valuable information about this AI-assisted development approach:
+The project was developed with Claude.ai and Claude Engineer CLI. The [ai-insights](/ai_insight/) directory contains valuable information about this AI-assisted development approach:
 
 ### cli-dump
 Complete transcripts of Claude Engineering CLI sessions.
